@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Bold.woff2") format("woff2"),
+    url("Roboto-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Regular.woff2") format("woff2"),
+    url("Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 /* VARIABLES */
 
 :root {
@@ -19,6 +36,7 @@ html {
 ::before,
 ::after {
     box-sizing: inherit;
+    margin: 0;
 }
 
 img {
@@ -32,7 +50,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* font-family: "Roboto", "Arial", sans-serif; */
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .visually-hidden {
@@ -51,7 +69,7 @@ body {
 /* CONTAINER */
 
 .container {
-    /* max-width: YOUR CONTAINER MAX-WIDTH PX HERE; */
+    width: 1040px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 20px;
@@ -62,4 +80,87 @@ body {
 
 .site-main {
     flex-grow: 1;
+}
+
+.site-header {
+    height: 41.54px;
+    padding-top: 30px;
+}
+.header-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-logo-link {
+    text-decoration: none;
+    margin-right: 502px;
+}
+.header-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.header-list-item {
+    margin-right: 30px;
+}
+.header-list-item:nth-child(4) {
+    margin-right: 40px;
+}
+.header-list-item-link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.header-search-input {
+    width: 170px;
+    height: 23px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+.hero {
+    margin-top: 151px;
+    height: 567px;
+}
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-left-box {
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+}
+.hero-text {
+    width: 450px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777;
+    border-left: 3px solid #888888;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+.hero-link {
+    width: 260px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EA625C;
+}
+.hero-img {
 }
