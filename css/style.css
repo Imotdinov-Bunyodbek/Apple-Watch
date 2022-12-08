@@ -51,6 +51,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
+    background-image: url(../images/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: left 1000px top 130px;
 }
 
 .visually-hidden {
@@ -84,7 +88,8 @@ body {
 
 .site-header {
     height: 41.54px;
-    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 151px;
 }
 .header-box {
     display: flex;
@@ -120,21 +125,21 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 150%;
-    text-align: center;
     color: #666;
     border: none;
     border-bottom: 1px solid #333;
 }
+.header-search-input:focus {
+    outline: none;
+}
 .hero {
-    margin-top: 151px;
-    height: 567px;
+    height: 475px;
+    border-bottom: 2px solid #ddd;
 }
 .hero-box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.hero-left-box {
+    flex-direction: column;
+    align-items: flex-start;
 }
 .hero-title {
     font-weight: 700;
@@ -144,14 +149,22 @@ body {
     color: #000;
     margin-bottom: 30px;
 }
+.hero-text-symbol-box {
+    display: flex;
+}
+.hero-text-symbol {
+    content: "";
+    display: block;
+    height: 120px;
+    border-left: 3px solid #888;
+    margin-right: 40px;
+}
 .hero-text {
     width: 450px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #777;
-    border-left: 3px solid #888888;
-    padding-left: 40px;
     margin-bottom: 30px;
 }
 .hero-link {
@@ -160,7 +173,186 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EA625C;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ea625c;
+    text-decoration: none;
 }
-.hero-img {
+.about-smart-watch-section {
+    height: 393px;
+    padding-top: 70px;
+}
+.about-smart-watch-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.about-smart-watch-list-item {
+    width: 287px;
+    margin-right: 69px;
+}
+.about-smart-watch-list-item:nth-child(3) {
+    margin-right: 0;
+}
+.about-smart-watch-list-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222;
+}
+.about-smart-watch-list-item-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.symbol-box {
+    display: flex;
+}
+.symbol {
+    width: 8px;
+    height: 8px;
+    background: #ddd;
+    margin-right: 10px;
+}
+.about-smart-watch-list-item-link {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #ea625c;
+    text-decoration: none;
+}
+.about-smart-watch-list-item-link-symbol {
+    width: 40px;
+    height: 0px;
+    border-top: 3px solid #ea625c;
+    margin-right: 10px;
+}
+.nike-sport-band {
+    height: 739.93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nike-sport-band-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nike-sport-band-left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nike-sport-band-left-box-title {
+    width: 403px;
+    height: 180px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 30px;
+}
+.nike-sport-band-text-symbol-box {
+    width: 450px;
+    height: 96px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.nike-sport-band-text-symbol {
+    content: "";
+    display: block;
+    height: 96px;
+    border-left: 3px solid #888;
+    margin-right: 40px;
+}
+.nike-sport-band-text {
+    width: 450px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777;
+}
+.nike-sport-band-link {
+    width: 260px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ea625c;
+    text-decoration: none;
+}
+.control-section {
+    height: 830.19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/runners\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.control-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translate(50%);
+}
+.control-box-title {
+    width: 490px;
+    height: 120px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.control-box-text-symbol-box {
+    display: flex;
+    margin-bottom: 30px;
+}
+.control-box-text-symbol {
+    content: "";
+    display: block;
+    height: 120px;
+    border-left: 3px solid #888;
+    margin-right: 40px;
+}
+.control-box-text {
+    width: 450px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+.control-box-link {
+    width: 260px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ea625c;
+    text-decoration: none;
 }
